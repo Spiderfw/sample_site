@@ -21,14 +21,14 @@ html {
 
 html {
   font-size: map-get($_font-size, sm);
-  line-height: 1.7;
+  line-height: 1.5;
   @include _mq-up() {
     font-size: map-get($_font-size, md);
   }
 }
 
 body {
-  color: $_color-text;
+  color: $_color-main-text;
   font-family: $_font-family-sans-serif-1;
   font-weight: $_font-weight-normal;
   /* アンチエイリアスを指定する */
@@ -36,31 +36,49 @@ body {
   -moz-osx-font-smoothing: auto;
   /* メトリクスカーニングを指定する */
   font-kerning: normal;
-  background-color: $_color-bg;
+  background-color: $_color-base;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: inherit;
   font-weight: $_font-weight-bold;
   line-height: 1.4;
   color: inherit;
 }
 
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
 
-ul, ol {
+ul,
+ol {
   padding-left: 1em;
 }
+
+li {
+  list-style-type: none;
+}
+
 /**
  * ネストされたリストのマージンをリセットします。
  */
 li {
-  > ul, > ol {
+  > ul,
+  > ol {
     margin-bottom: 0;
   }
 }
@@ -82,7 +100,7 @@ th {
 
 a {
   text-decoration: underline;
-  color: $_color-link;
+  color: $_color-main-text;
   &:visited {
     color: $_color-link--visited;
   }
@@ -123,14 +141,14 @@ dfn {
 
 code,
 pre {
-    font-family: Consolas, Menlo, Courier, monospace;
+  font-family: Consolas, Menlo, Courier, monospace;
 }
 
 code {
   padding: 0.2em;
   border-radius: $_radius;
   font-size: $_font-size--small;
-  background-color: rgba(0,0,0,0.06);
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 pre code {
@@ -139,12 +157,22 @@ pre code {
   background-color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-blockquote, p, address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
 hr,
 table,
-fieldset, figure,
+fieldset,
+figure,
 pre {
   margin-top: 0;
   margin-bottom: 0;

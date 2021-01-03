@@ -512,7 +512,7 @@ html {
 
 html {
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -522,7 +522,7 @@ html {
 }
 
 body {
-  color: #000;
+  color: #474747;
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: 400;
   /* アンチエイリアスを指定する */
@@ -530,24 +530,35 @@ body {
   -moz-osx-font-smoothing: auto;
   /* メトリクスカーニングを指定する */
   font-kerning: normal;
-  background-color: #fff;
+  background-color: #fbf7f3;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: inherit;
   font-weight: 600;
   line-height: 1.4;
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1em;
+}
+
+li {
+  list-style-type: none;
 }
 
 /**
  * ネストされたリストのマージンをリセットします。
  */
-li > ul, li > ol {
+li > ul,
+li > ol {
   margin-bottom: 0;
 }
 
@@ -568,12 +579,12 @@ th {
 
 a {
   text-decoration: underline;
-  color: #2b70ba;
+  color: #474747;
 }
 
 a:hover, a:active, a:focus {
   text-decoration: underline;
-  color: #5997d9;
+  color: #aba8a1;
 }
 
 /**
@@ -623,12 +634,22 @@ pre code {
   background-color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-blockquote, p, address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
 hr,
 table,
-fieldset, figure,
+fieldset,
+figure,
 pre {
   margin-top: 0;
   margin-bottom: 0;

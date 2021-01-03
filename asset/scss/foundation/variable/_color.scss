@@ -1,9 +1,11 @@
 // base color
 $_color-text: #000 !default;
 $_color-bg: #fff !default;
+$_color-base: #fbf7f3 !default;
+$_color-main-text: #474747 !default;
 
 // link color
-$_color-link: #2b70ba !default;
+$_color-link: #878378 !default;
 $_color-link--visited: null !default;
 $_color-link--hover: lighten($_color-link, 15%) !default;
 
